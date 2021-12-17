@@ -30,6 +30,8 @@ Bringing machine 'default' up with 'virtualbox' provider...
 
 4 - in your browser localhost:8080/wp-admin/install.php
 
+<img src="https://github.com/SoufiyanAk/Vagrant-wordpress-ubuntu/blob/main/home.png?raw=true" width="1000" height="400">
+
 5 - To SSH into the box, use vagrant ssh.
 
 6 - To destroy the box, use vagrant destroy.
