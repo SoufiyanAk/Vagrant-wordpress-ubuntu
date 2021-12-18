@@ -4,11 +4,24 @@ This repository provides Vagrantfile with ubuntu/trusty64 box to install and set
 
 For more information about Vagrant usage, see Vagrant's documentation
 
-   1 - Download Vagrantfile to a directory, navigate to inside the directory
+   1 - Create a directory
+``` 
+mkdir MyWebsite
+cd MyWebsite
+``` 
+   2 - Describe the kind of machine and resources you need to run your project,
+``` 
+vagrant init ubuntu/trusty64
+``` 
+   3 - You can add a box to Vagrant with vagrant box add. This stores the box under a specific name so that multiple Vagrant environments can re-use it.
+``` 
+vagrant box add ubuntu/trusty64
+``` 
+   4 - Download Vagrantfile to a directory, navigate to inside the directory
 
-   2 - Download the setup shell script, the Vagrantfile needs it to install and setup Apache,Mysql,Ssh,Wordpress...
+   5 - Download the setup shell script, the Vagrantfile needs it to install and setup Apache,Mysql,Ssh,Wordpress...
 
-   3 - Run the box with a single comande -> vagrant up.
+   6 - Run the box with a single comande -> vagrant up.
     
 ```  
 $ vagrant up
@@ -28,11 +41,11 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Running 'pre-boot' VM customizations...
 ```
 
-4 - in your browser localhost:8080/wp-admin/install.php
+7 - in your browser localhost:8080/wp-admin/install.php
 
 <img src="https://github.com/SoufiyanAk/Vagrant-wordpress-ubuntu/blob/main/home.png?raw=true" width="1000" height="400">
 
-5 - To SSH into the box, use vagrant ssh.
+8 - To SSH into the box, use vagrant ssh.
 
-6 - To destroy the box, use vagrant destroy.
+9 - To destroy the box, use vagrant destroy.
 
